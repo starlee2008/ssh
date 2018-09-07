@@ -5,16 +5,17 @@
 <struts>
     <constant name="struts.i18n.encoding" value="utf-8"></constant>
     <package name="default" namespace="/" extends="struts-default">
-        <!--/sayHello-->
-        <action name="sayHello" class="cap.action.LoginAction" method="sayHi">
+        <action name="login" class="cap.action.LoginAction" method="login">
             <result name="success">/result.jsp</result>
+            <result name="error">/error.jsp</result>
         </action>
-        <action name="sayHi" class="cap.action.LoginAction">
+        <action name="login1" class="cap.action.LoginAction1" method="login">
             <result name="success">/result.jsp</result>
+            <result name="error">/error.jsp</result>
         </action>
 
+
     </package>
-    <include file="test.xml"/>
 
 
 </struts>

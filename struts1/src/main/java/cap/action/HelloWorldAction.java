@@ -16,5 +16,10 @@ public class HelloWorldAction extends ActionSupport {
     public String sayHi() {
 
         return SUCCESS;
+
+    }
+
+    public String execute() {
+        return SUCCESS;
     }
 }
