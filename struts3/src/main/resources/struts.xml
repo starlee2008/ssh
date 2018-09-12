@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="login" extends="struts-default">
+        <interceptors>
+            <!-- 添加登录拦截器 -->
+            <interceptor name="checkLogin" class="cap.util.CheckLoginInterceptor"/>
+            <!-- 添加登录拦截器 -->
+            <interceptor-stack name="mystack">
+                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="checkLogin"/>
+            </interceptor-stack>
+        </interceptors>
+        <!-- 修改默认拦截器 -->
+        <default-interceptor-ref name="mystack"/>
+        <global-results>
+            <result name="login">/login.jsp</result>
+        </global-results>
+    </package>
+
+
+    <include file="test.xml"/>
+</struts>
