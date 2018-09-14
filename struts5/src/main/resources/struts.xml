@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.i18n.encoding" value="utf-8"></constant>
+    <package name="default" namespace="/" extends="struts-default">
+        <action name="ognlObj" class="cap.action.OgnlObjAction" method="ognlObj">
+            <result name="success">/ognlObj.jsp</result>
+        </action>
+
+    </package>
+
+
+</struts>
