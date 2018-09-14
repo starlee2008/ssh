@@ -6,7 +6,7 @@
 
     <package name="xxxx" namespace="/xxx" extends="struts-default">
         <!--/xxx/sayHello-->
-        <action name="sayHello" class="cap.action.LoginAction" method="sayHi">
+        <action name="sayHello" class="cap.action.cap.action.LoginAction" method="sayHi">
             <result name="success">/result.jsp</result>
         </action>
     </package>

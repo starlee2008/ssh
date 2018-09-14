@@ -6,7 +6,7 @@
     <constant name="struts.i18n.encoding" value="utf-8"></constant>
     <package name="default" namespace="/" extends="login">
         <action name="count" class="cap.action.TimerAction" method="count">
-
+            <!--<interceptor-ref name="timer"/>-->
             <result name="success">/result.jsp</result>
         </action>
 

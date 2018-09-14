@@ -9,6 +9,7 @@
         <module name="struts1" />
         <module name="struts2" />
         <module name="struts3" />
+        <module name="struts4" />
         <module name="test" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
       <module name="struts1" target="1.7" />
       <module name="struts2" target="1.7" />
       <module name="struts3" target="1.7" />
+      <module name="struts4" target="1.7" />
       <module name="test" target="1.7" />
     </bytecodeTargetLevel>
   </component>

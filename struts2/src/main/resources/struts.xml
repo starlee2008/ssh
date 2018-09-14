@@ -5,7 +5,7 @@
 <struts>
     <constant name="struts.i18n.encoding" value="utf-8"></constant>
     <package name="default" namespace="/" extends="struts-default">
-        <action name="login" class="cap.action.LoginAction" method="login">
+        <action name="login" class="cap.action.cap.action.LoginAction" method="login">
             <result name="success">/result.jsp</result>
             <result name="error">/error.jsp</result>
         </action>
