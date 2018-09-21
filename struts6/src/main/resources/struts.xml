@@ -17,6 +17,10 @@
             <result name="success">/result.jsp</result>
         </action>
 
+        <action name="login" class="cap.action.LoginAction" method="login">
+            <result name="success">/index.jsp</result>
+        </action>
+
 
     </package>
 
