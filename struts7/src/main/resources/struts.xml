@@ -7,6 +7,11 @@
     <constant name="struts.custom.i18n.resources" value="message"/>
     <package name="default" namespace="/" extends="struts-default">
 
+        <action name="register" class="cap.action.RegisterAction" method="register">
+            <result name="success">/index.jsp</result>
+            <result name="input">/register.jsp</result>
+        </action>
+
 
 
     </package>
