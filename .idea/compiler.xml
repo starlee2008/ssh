@@ -12,6 +12,7 @@
         <module name="struts4" />
         <module name="struts5" />
         <module name="struts6" />
+        <module name="struts7" />
         <module name="struts8" />
         <module name="test" />
       </profile>
@@ -23,6 +24,7 @@
       <module name="struts4" target="1.7" />
       <module name="struts5" target="1.7" />
       <module name="struts6" target="1.7" />
+      <module name="struts7" target="1.7" />
       <module name="struts8" target="1.7" />
       <module name="test" target="1.7" />
     </bytecodeTargetLevel>
