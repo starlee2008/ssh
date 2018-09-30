@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.i18n.encoding" value="utf-8"/>
+    <package name="default" namespace="/" extends="struts-default">
+        <action name="list" class="cap.action.AdminAction" method="list">
+            <result name="success">/listAdmin.jsp</result>
+        </action>
+        <action name="edit" class="cap.action.AdminAction" method="edit">
+            <result name="success">/editAdmin.jsp</result>
+        </action>
+        <action name="add" class="cap.action.AdminAction" method="add">
+            <result name="success" type="redirect">list</result>
+        </action>
+        <action name="del" class="cap.action.AdminAction" method="del">
+            <result name="success" type="redirect">list</result>
+        </action>
+        <action name="update" class="cap.action.AdminAction" method="update">
+            <result name="success" type="redirect">list</result>
+        </action>
+
+    </package>
+</struts>

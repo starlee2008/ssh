@@ -9,6 +9,7 @@
     <file type="web" url="file://$PROJECT_DIR$/struts6" />
     <file type="web" url="file://$PROJECT_DIR$/struts7" />
     <file type="web" url="file://$PROJECT_DIR$/struts8" />
+    <file type="web" url="file://$PROJECT_DIR$/struts9" />
     <file type="web" url="file://$PROJECT_DIR$/test" />
   </component>
   <component name="MavenProjectsManager">
@@ -23,6 +24,7 @@
         <option value="$PROJECT_DIR$/struts6/pom.xml" />
         <option value="$PROJECT_DIR$/struts8/pom.xml" />
         <option value="$PROJECT_DIR$/struts7/pom.xml" />
+        <option value="$PROJECT_DIR$/struts9/pom.xml" />
       </list>
     </option>
   </component>
