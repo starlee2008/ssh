@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/spring2" />
     <file type="web" url="file://$PROJECT_DIR$/struts1" />
     <file type="web" url="file://$PROJECT_DIR$/struts2" />
     <file type="web" url="file://$PROJECT_DIR$/struts3" />
@@ -26,6 +27,7 @@
         <option value="$PROJECT_DIR$/struts7/pom.xml" />
         <option value="$PROJECT_DIR$/struts9/pom.xml" />
         <option value="$PROJECT_DIR$/spring1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring2/pom.xml" />
       </list>
     </option>
   </component>

@@ -18,5 +18,6 @@ public class HelloWorldTest {
     public void testSayHi2() {
         HelloWorld helloWorld = new HelloWorldImpl();
         System.out.println(helloWorld.sayHi("starlee2"));
+        //helloWorld=null;
     }
 }
