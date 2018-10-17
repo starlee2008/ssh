@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="admin" class="cap.bean.Admin">
+        <property name="id" value="1"/>
+        <property name="username" value="starlee2008"/>
+        <property name="password" value="starlee2008"/>
+    </bean>
+    <bean id="admin2" class="cap.bean.Admin">
+        <constructor-arg index="0" value="1"/>
+        <constructor-arg index="1" value="starlee2008x"/>
+        <constructor-arg index="2" value="starlee2008x"/>
+    </bean>
+    <bean id="admin3" class="cap.bean.Admin">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="username" value="starlee2008x1"/>
+        <constructor-arg name="password" value="starlee2008x1"/>
+    </bean>
+
+    <bean id="adminService" class="cap.service.impl.AdminServiceImpl">
+        <property name="admin" ref="admin"></property>
+
+    </bean>
+    <bean id="adminService1" class="cap.service.impl.AdminServiceImpl">
+        <property name="admin">
+            <ref bean="admin"></ref>
+        </property>
+
+    </bean>
+    <bean id="adminService2" class="cap.service.impl.AdminServiceImpl">
+        <property name="admin">
+            <bean id="admin" class="cap.bean.Admin">
+                <property name="id" value="1"/>
+                <property name="username" value="starlee2008"/>
+                <property name="password" value="starlee2008"/>
+            </bean>
+        </property>
+
+    </bean>
+
+</beans>

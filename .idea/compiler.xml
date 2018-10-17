@@ -9,6 +9,7 @@
         <module name="spring1" />
         <module name="spring2" />
         <module name="spring3" />
+        <module name="spring4" />
         <module name="struts1" />
         <module name="struts2" />
         <module name="struts3" />
@@ -25,6 +26,7 @@
       <module name="spring1" target="1.7" />
       <module name="spring2" target="1.7" />
       <module name="spring3" target="1.7" />
+      <module name="spring4" target="1.7" />
       <module name="struts1" target="1.7" />
       <module name="struts2" target="1.7" />
       <module name="struts3" target="1.7" />
