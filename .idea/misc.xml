@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/spring3" />
     <file type="web" url="file://$PROJECT_DIR$/spring4" />
     <file type="web" url="file://$PROJECT_DIR$/spring4x1" />
+    <file type="web" url="file://$PROJECT_DIR$/spring6" />
     <file type="web" url="file://$PROJECT_DIR$/struts1" />
     <file type="web" url="file://$PROJECT_DIR$/struts2" />
     <file type="web" url="file://$PROJECT_DIR$/struts3" />
@@ -34,6 +35,7 @@
         <option value="$PROJECT_DIR$/spring3/pom.xml" />
         <option value="$PROJECT_DIR$/spring4/pom.xml" />
         <option value="$PROJECT_DIR$/spring4x1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring6/pom.xml" />
       </list>
     </option>
   </component>
