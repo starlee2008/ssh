@@ -5,11 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.edu.cap</groupId>
-    <artifactId>spring6x1</artifactId>
+    <artifactId>spring7</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
 
-    <name>spring6x1 Maven Webapp</name>
+    <name>spring7</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -60,11 +59,7 @@
             <artifactId>spring-tx</artifactId>
             <version>5.0.8.RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.0.1</version>
-        </dependency>
+
         <dependency>
             <groupId>aspectj</groupId>
             <artifactId>aspectjrt</artifactId>
@@ -80,17 +75,21 @@
             <artifactId>spring-jdbc</artifactId>
             <version>5.0.8.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.39</version>
+        </dependency>
     </dependencies>
 
     <build>
-        <finalName>spring6x1</finalName>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>3.0.0</version>
                 </plugin>
-                <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
+                <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>3.0.2</version>
@@ -104,8 +103,8 @@
                     <version>2.20.1</version>
                 </plugin>
                 <plugin>
-                    <artifactId>maven-war-plugin</artifactId>
-                    <version>3.2.0</version>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.0.2</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-install-plugin</artifactId>
