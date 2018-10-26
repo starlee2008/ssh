@@ -22,7 +22,7 @@
     </bean>
     <!--
 
-    <bean id="adminDAO" class="cap.dao.impl.AdminDAOImpl">
+    <bean id="adminDAO" class="cap.AdminDAOImpl">
         <property name="admin" ref="admin"/>
     </bean>
 

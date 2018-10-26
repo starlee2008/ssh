@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--启用aspectj-->
+    <aop:aspectj-autoproxy/>
+
+    <bean id="adminDAO" class="cap.dao.impl.AdminDAOImpl">
+    </bean>
+    <bean id="aspectj" class="cap.util.AdminAspectjLogger"/>
+
+
+    <!--采用xml的配置方式使用aspectj-->
+    <!--
+    <bean id="adminLogger" class="cap.util.AdminLogger"/>
+    <aop:config>
+        <aop:aspect ref="adminLogger">
+            <aop:pointcut id="pointCut" expression="execution(* cap.dao.impl.*.*(..))"/>
+            <aop:before method="logBefore" pointcut-ref="pointCut"/>
+            <aop:after method="logAfter" pointcut-ref="pointCut"/>
+            <aop:around method="logAround" pointcut-ref="pointCut"/>
+        </aop:aspect>
+    </aop:config>
+    -->
+
+
+</beans>
