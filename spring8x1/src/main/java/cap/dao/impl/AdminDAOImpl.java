@@ -7,6 +7,7 @@ import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;
@@ -17,6 +18,8 @@ import java.util.List;
 import java.util.Map;
 
 @Repository(value = "adminDAO")
+//@Transactional
+//使用@Transactional 注解必须启用applicationContext.xml中的<tx:annotation-driven/>标签
 public class AdminDAOImpl implements AdminDAO {
 
     private class MyRowMapper implements RowMapper<Admin> {
@@ -76,7 +79,9 @@ public class AdminDAOImpl implements AdminDAO {
 
         String sql = "insert into admin(username,password) values(:username,:password)";
         SqlParameterSource sqlParameterSource = new BeanPropertySqlParameterSource(admin);
-        return namedParameterJdbcTemplate.update(sql, sqlParameterSource);
+        int res = namedParameterJdbcTemplate.update(sql, sqlParameterSource);
+        int result = 10 / 0;
+        return res;
 
     }
 }
