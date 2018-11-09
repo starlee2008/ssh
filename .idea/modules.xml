@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/hello/hello.iml" filepath="$PROJECT_DIR$/hello/hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lmx/lmx.iml" filepath="$PROJECT_DIR$/lmx/lmx.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring1/spring1.iml" filepath="$PROJECT_DIR$/spring1/spring1.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring12/spring12.iml" filepath="$PROJECT_DIR$/spring12/spring12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring13/spring13.iml" filepath="$PROJECT_DIR$/spring13/spring13.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring2/spring2.iml" filepath="$PROJECT_DIR$/spring2/spring2.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring3/spring3.iml" filepath="$PROJECT_DIR$/spring3/spring3.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring4/spring4.iml" filepath="$PROJECT_DIR$/spring4/spring4.iml" />

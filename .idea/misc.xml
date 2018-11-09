@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/spring12" />
+    <file type="web" url="file://$PROJECT_DIR$/spring13" />
     <file type="web" url="file://$PROJECT_DIR$/spring2" />
     <file type="web" url="file://$PROJECT_DIR$/spring3" />
     <file type="web" url="file://$PROJECT_DIR$/spring4" />
@@ -45,6 +46,7 @@
         <option value="$PROJECT_DIR$/spring8x0/pom.xml" />
         <option value="$PROJECT_DIR$/spring8x1/pom.xml" />
         <option value="$PROJECT_DIR$/spring12/pom.xml" />
+        <option value="$PROJECT_DIR$/spring13/pom.xml" />
       </list>
     </option>
   </component>

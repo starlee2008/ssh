@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring1" />
         <module name="spring12" />
+        <module name="spring13" />
         <module name="spring2" />
         <module name="spring3" />
         <module name="spring4" />
@@ -32,6 +33,7 @@
     <bytecodeTargetLevel>
       <module name="spring1" target="1.7" />
       <module name="spring12" target="1.7" />
+      <module name="spring13" target="1.7" />
       <module name="spring2" target="1.7" />
       <module name="spring3" target="1.7" />
       <module name="spring4" target="1.7" />
