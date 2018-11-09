@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.provider_class">org.hibernate.c3p0.internal.C3P0ConnectionProvider</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">admin</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/cdtu</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!--连接池的最小连接数 -->
+        <property name="c3p0.min_size">5</property>
+
+        <!--连接池的最大连接数 -->
+        <property name="c3p0.max_size">500</property>
+
+        <!--连接超时时间 -->
+        <property name="hibernate.c3p0.timeout">1800</property>
+        <!--statements缓存大小 -->
+        <property name="hibernate.c3p0.max_statements">100</property>
+        <!--每隔多少秒检测连接是否可正常使用 -->
+        <property name="hibernate.c3p0.idle_test_period">121</property>
+        <!--当池中的连接耗尽的时候，一次性增加的连接数量,默认为3 -->
+        <property name="hibernate.c3p0.acquire_increment">3</property>
+
+        <property name="hibernate.c3p0.validate">true</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="format_sql">true</property>
+        <!--load mapping resources -->
+        <mapping resource="cap/bean/Product.hbm.xml"/>
+    </session-factory>
+
+</hibernate-configuration>

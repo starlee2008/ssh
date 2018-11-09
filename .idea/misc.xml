@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/hibernate1" />
     <file type="web" url="file://$PROJECT_DIR$/spring12" />
     <file type="web" url="file://$PROJECT_DIR$/spring13" />
     <file type="web" url="file://$PROJECT_DIR$/spring2" />
@@ -47,6 +48,7 @@
         <option value="$PROJECT_DIR$/spring8x1/pom.xml" />
         <option value="$PROJECT_DIR$/spring12/pom.xml" />
         <option value="$PROJECT_DIR$/spring13/pom.xml" />
+        <option value="$PROJECT_DIR$/hibernate1/pom.xml" />
       </list>
     </option>
   </component>
