@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/hibernate1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hibernate2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring1" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring12" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring13" charset="UTF-8" />
@@ -14,6 +15,7 @@
     <file url="file://$PROJECT_DIR$/spring7" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring8x0" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring8x1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssh1" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/struts1" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/struts2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/struts3" charset="UTF-8" />

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/hibernate1" />
+    <file type="web" url="file://$PROJECT_DIR$/hibernate2" />
     <file type="web" url="file://$PROJECT_DIR$/spring12" />
     <file type="web" url="file://$PROJECT_DIR$/spring13" />
     <file type="web" url="file://$PROJECT_DIR$/spring2" />
@@ -12,6 +13,7 @@
     <file type="web" url="file://$PROJECT_DIR$/spring6x1" />
     <file type="web" url="file://$PROJECT_DIR$/spring8x0" />
     <file type="web" url="file://$PROJECT_DIR$/spring8x1" />
+    <file type="web" url="file://$PROJECT_DIR$/ssh1" />
     <file type="web" url="file://$PROJECT_DIR$/struts1" />
     <file type="web" url="file://$PROJECT_DIR$/struts2" />
     <file type="web" url="file://$PROJECT_DIR$/struts3" />
@@ -49,6 +51,8 @@
         <option value="$PROJECT_DIR$/spring12/pom.xml" />
         <option value="$PROJECT_DIR$/spring13/pom.xml" />
         <option value="$PROJECT_DIR$/hibernate1/pom.xml" />
+        <option value="$PROJECT_DIR$/hibernate2/pom.xml" />
+        <option value="$PROJECT_DIR$/ssh1/pom.xml" />
       </list>
     </option>
   </component>
