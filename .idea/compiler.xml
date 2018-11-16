@@ -21,6 +21,7 @@
         <module name="spring8x0" />
         <module name="spring8x1" />
         <module name="ssh1" />
+        <module name="ssh2" />
         <module name="struts1" />
         <module name="struts2" />
         <module name="struts3" />
@@ -49,6 +50,7 @@
       <module name="spring8x0" target="1.7" />
       <module name="spring8x1" target="1.7" />
       <module name="ssh1" target="1.7" />
+      <module name="ssh2" target="1.7" />
       <module name="struts1" target="1.7" />
       <module name="struts2" target="1.7" />
       <module name="struts3" target="1.7" />

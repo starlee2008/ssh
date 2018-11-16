@@ -14,6 +14,7 @@
     <file type="web" url="file://$PROJECT_DIR$/spring8x0" />
     <file type="web" url="file://$PROJECT_DIR$/spring8x1" />
     <file type="web" url="file://$PROJECT_DIR$/ssh1" />
+    <file type="web" url="file://$PROJECT_DIR$/ssh2" />
     <file type="web" url="file://$PROJECT_DIR$/struts1" />
     <file type="web" url="file://$PROJECT_DIR$/struts2" />
     <file type="web" url="file://$PROJECT_DIR$/struts3" />
@@ -53,6 +54,7 @@
         <option value="$PROJECT_DIR$/hibernate1/pom.xml" />
         <option value="$PROJECT_DIR$/hibernate2/pom.xml" />
         <option value="$PROJECT_DIR$/ssh1/pom.xml" />
+        <option value="$PROJECT_DIR$/ssh2/pom.xml" />
       </list>
     </option>
   </component>
