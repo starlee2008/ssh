@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD
+3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-12-17 10:04:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cap.bean.DateTimeDemo" table="DateTimeDemo">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="increment"/>
+        </id>
+        <property name="utilDate" type="java.util.Date">
+            <column name="UTILDATE"/>
+        </property>
+        <property name="utilDate_timestamp" type="java.util.Date">
+            <column name="UTILDATE_TIMESTAMP"/>
+        </property>
+        <property name="utilDate_date" type="java.util.Date">
+            <column name="UTILDATE_DATE"/>
+        </property>
+        <property name="utilDate_time" type="java.util.Date">
+            <column name="UTILDATE_TIME"/>
+        </property>
+        <property name="sqlDate" type="java.sql.Date">
+            <column name="SQLDATE"/>
+        </property>
+        <property name="sqlTime" type="java.sql.Time">
+            <column name="SQLTIME"/>
+        </property>
+        <property name="sqlTimestamp" type="java.sql.Timestamp">
+            <column name="SQLTIMESTAMP"/>
+        </property>
+        <property name="utilCalendar" type="java.util.Calendar">
+            <column name="UTILCALENDAR"/>
+        </property>
+        <property name="utilCalendar_calendar" type="java.util.Calendar">
+            <column name="UTILCALENDAR_CALENDAR"/>
+        </property>
+        <property name="utilCalendar_calendar_date" type="java.util.Calendar">
+            <column name="UTILCALENDAR_CALENDAR_DATE"/>
+        </property>
+    </class>
+
+
+</hibernate-mapping>

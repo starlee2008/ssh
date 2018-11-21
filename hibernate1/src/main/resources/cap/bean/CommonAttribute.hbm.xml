@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD
+3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-12-17 10:04:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cap.bean.CommonAttributeDemo" table="COMMONATTRIBUTEDEMO">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="increment"/>
+        </id>
+        <property name="byteAttr" type="byte">
+            <column name="BYTEATTR"/>
+        </property>
+        <property name="shortAttr" type="short">
+            <column name="SHORTATTR"/>
+        </property>
+        <property name="intAttr" type="int">
+            <column name="INTATTR"/>
+        </property>
+        <property name="longAttr" type="java.lang.Long">
+            <column name="LONGATTR"/>
+        </property>
+        <property name="floatAttr" type="float">
+            <column name="FLOATATTR"/>
+        </property>
+        <property name="doubleAttr" type="java.lang.Double">
+            <column name="DOUBLEATTR"/>
+        </property>
+        <property name="bigDecimalAttr" type="java.math.BigDecimal">
+            <column name="BIGDECIMALATTR"/>
+        </property>
+        <property name="bigDecimalAttr2" type="java.math.BigDecimal">
+            <column name="BIGDECIMALATTR2" precision="12" scale="4"/>
+        </property>
+        <property name="booleanAttr_boolean" type="boolean">
+            <column name="BOOLEANATTR_BOOLEAN"/>
+        </property>
+        <property name="booleanAttr_yes_no" type="yes_no">
+            <column name="BOOLEANATTR_YES_NO"/>
+        </property>
+        <property name="booleanAttr_true_false" type="true_false">
+            <column name="BOOLEANATTR_TRUE_FALSE"/>
+        </property>
+        <property name="charAttr" type="char">
+            <column name="CHARATTR"/>
+        </property>
+        <property name="stringAttr" type="java.lang.String">
+            <column name="STRINGATTR"/>
+        </property>
+        <property name="stringAttr2" type="java.lang.String">
+            <column name="STRINGATTR2" length="20"/>
+        </property>
+        <property name="classAttr_class" type="java.lang.Class">
+            <column name="CLASSATTR_CLASS"/>
+        </property>
+        <property name="localeAttr" type="java.util.Locale">
+            <column name="LOCALEATTR"/>
+        </property>
+        <property name="timeZoneAttr" type="java.util.TimeZone">
+            <column name="TIMEZONEATTR"/>
+        </property>
+        <property name="currencyAttr" type="java.util.Currency">
+            <column name="CURRENCYATTR"/>
+        </property>
+    </class>
+
+
+</hibernate-mapping>

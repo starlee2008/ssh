@@ -6,9 +6,9 @@
 <hibernate-mapping>
     <class name="cap.bean.Product" table="product">
         <id name="id" type="java.lang.Integer">
-            <generator class="increment"/>
+            <generator class="native"/>
         </id>
-        <property name="name" type="java.lang.String">
+        <property name="name" type="java.lang.String" not-null="true">
             <column name="cname"/>
         </property>
         <property name="serialNumber" type="java.lang.String" column="serialNumber"/>

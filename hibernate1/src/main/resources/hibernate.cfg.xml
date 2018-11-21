@@ -30,7 +30,10 @@
         <property name="hbm2ddl.auto">update</property>
         <property name="format_sql">true</property>
         <!--load mapping resources -->
-        <mapping resource="cap/bean/Product.hbm.xml"/>
+        <mapping class="cap.bean.Product"/>
+        <mapping resource="cap/bean/CommonAttribute.hbm.xml"/>
+        <mapping resource="cap/bean/DateTimeDemo.hbm.xml"/>
+
     </session-factory>
 
 </hibernate-configuration>

@@ -8,7 +8,7 @@
         <property name="proxool.pool_alias">dbpool</property>
         <property name="hibernate.proxool.xml">proxool.xml</property>
         <property name="show_sql">true</property>
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <mapping resource="cap/bean/Product.hbm.xml"/>
