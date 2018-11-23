@@ -2,6 +2,7 @@ package cap.bean;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.Date;
 
 @Entity
 @Table(name = "m_product", catalog = "cdtu")
@@ -16,7 +17,8 @@ public class Product {
     @Transient
     private int stock;// 产品库存量
 
-    private Timestamp timestamp;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date timestamp;
 
     public Integer getId() {
         return id;
@@ -58,11 +60,11 @@ public class Product {
         this.stock = stock;
     }
 
-    public Timestamp getTimestamp() {
+    public Date getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(Timestamp timestamp) {
+    public void setTimestamp(Date timestamp) {
         this.timestamp = timestamp;
     }
 }
