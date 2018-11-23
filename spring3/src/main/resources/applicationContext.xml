@@ -3,14 +3,14 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="helloWorld1" class="cap.service.impl.HelloWorldBeanFactory" factory-method="creatHelloWorldBean">
+    <cap.bean.bean id="helloWorld1" class="cap.service.impl.HelloWorldBeanFactory" factory-method="creatHelloWorldBean">
 
-    </bean>
+    </cap.bean.bean>
 
-    <bean id="helloWorldFactory" class="cap.service.impl.HelloWorldBeanFactory"></bean>
-    <bean id="helloWorld2" factory-bean="helloWorldFactory" factory-method="creatHelloWorldBean2">
+    <cap.bean.bean id="helloWorldFactory" class="cap.service.impl.HelloWorldBeanFactory"></cap.bean.bean>
+    <cap.bean.bean id="helloWorld2" factory-cap.bean.bean="helloWorldFactory" factory-method="creatHelloWorldBean2">
 
-    </bean>
+    </cap.bean.bean>
 
-    <bean id="helloWorld3" class="cap.service.impl.HelloWorldImpl" scope="prototype"></bean>
+    <cap.bean.bean id="helloWorld3" class="cap.service.impl.HelloWorldImpl" scope="prototype"></cap.bean.bean>
 </beans>

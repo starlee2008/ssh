@@ -10,6 +10,8 @@
         <module name="hibernate2" />
         <module name="hibernate3" />
         <module name="hibernate4" />
+        <module name="hibernate4x1" />
+        <module name="hibernate4x2" />
         <module name="spring1" />
         <module name="spring12" />
         <module name="spring13" />
@@ -41,6 +43,8 @@
       <module name="hibernate2" target="1.7" />
       <module name="hibernate3" target="1.5" />
       <module name="hibernate4" target="1.7" />
+      <module name="hibernate4x1" target="1.7" />
+      <module name="hibernate4x2" target="1.7" />
       <module name="spring1" target="1.7" />
       <module name="spring12" target="1.7" />
       <module name="spring13" target="1.7" />

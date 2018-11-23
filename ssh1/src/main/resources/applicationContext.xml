@@ -15,14 +15,14 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:component-scan base-package="cap.*"/>
-    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <cap.bean.bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://localhost:3306/cap"/>
         <property name="username" value="root"/>
         <property name="password" value="admin"/>
-    </bean>
+    </cap.bean.bean>
 
-    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+    <cap.bean.bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="hibernateProperties">
             <props>
@@ -35,10 +35,10 @@
         </property>
         <property name="annotatedClasses">
             <list>
-                <value>cap.bean.Admin</value>
+                <value>cap.cap.bean.bean.Admin</value>
             </list>
         </property>
-    </bean>
+    </cap.bean.bean>
 
 
 </beans>

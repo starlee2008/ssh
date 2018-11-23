@@ -10,14 +10,14 @@
     <!--启用aspectj-->
     <aop:aspectj-autoproxy/>
 
-    <bean id="adminDAO" class="cap.dao.impl.AdminDAOImpl">
-    </bean>
-    <bean id="aspectj" class="cap.util.AdminAspectjLogger"/>
+    <cap.bean.bean id="adminDAO" class="cap.dao.impl.AdminDAOImpl">
+    </cap.bean.bean>
+    <cap.bean.bean id="aspectj" class="cap.util.AdminAspectjLogger"/>
 
 
     <!--采用xml的配置方式使用aspectj-->
     <!--
-    <bean id="adminLogger" class="cap.util.AdminLogger"/>
+    <cap.bean.bean id="adminLogger" class="cap.util.AdminLogger"/>
     <aop:config>
         <aop:aspect ref="adminLogger">
             <aop:pointcut id="pointCut" expression="execution(* cap.dao.impl.*.*(..))"/>

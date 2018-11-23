@@ -11,7 +11,7 @@
         <property name="hbm2ddl.auto">update</property>
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
-        <mapping resource="cap/bean/Product.hbm.xml"/>
+        <mapping resource="cap/cap.bean.bean/Product.hbm.xml"/>
     </session-factory>
 
 </hibernate-configuration>

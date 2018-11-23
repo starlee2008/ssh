@@ -4,6 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="adminDAO" class="cap.dao.AdminDAOImpl"></bean>
+    <cap.bean.bean id="adminDAO" class="cap.dao.AdminDAOImpl"></cap.bean.bean>
 
 </beans>

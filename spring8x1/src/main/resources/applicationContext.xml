@@ -18,17 +18,17 @@
     <!--启用下面的标签需要在类前加@Transactional-->
     <!--<tx:annotation-driven transaction-manager="txManager"/>-->
 
-    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <cap.bean.bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://localhost:3306/cap"/>
         <property name="username" value="root"/>
         <property name="password" value="admin"/>
-    </bean>
+    </cap.bean.bean>
 
 
-    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <cap.bean.bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
-    </bean>
+    </cap.bean.bean>
 
     <tx:advice id="txAdvice" transaction-manager="txManager">
         <tx:attributes>
@@ -43,9 +43,10 @@
     </aop:config>
 
 
-    <bean id="namedParameterJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+    <cap.bean.bean id="namedParameterJdbcTemplate"
+                   class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
         <constructor-arg ref="dataSource"/>
-    </bean>
+    </cap.bean.bean>
 
 
 </beans>

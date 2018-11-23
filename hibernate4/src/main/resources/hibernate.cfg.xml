@@ -31,8 +31,8 @@
         <property name="format_sql">true</property>
         <!--load mapping resources -->
 
-        <mapping resource="cap/bean/Customer.hbm.xml"/>
-        <mapping resource="cap/bean/Order.hbm.xml"/>
+        <mapping resource="cap/cap.bean.bean/Customer.hbm.xml"/>
+        <mapping resource="cap/cap.bean.bean/Order.hbm.xml"/>
 
     </session-factory>
 

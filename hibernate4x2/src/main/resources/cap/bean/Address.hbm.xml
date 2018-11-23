@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD
+3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-12-17 10:04:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cap.bean.Address" table="n_address">
+        <id name="id" type="java.lang.Integer">
+            <generator class="foreign">
+                <param name="property">customer</param>
+            </generator>
+        </id>
+        <property name="city" type="java.lang.String">
+            <column name="CITY"/>
+        </property>
+        <property name="street" type="java.lang.String">
+            <column name="STREET"/>
+        </property>
+        <property name="zipCode" type="java.lang.String">
+            <column name="ZIP_CODE"/>
+        </property>
+
+        <one-to-one name="customer" class="cap.bean.Customer" constrained="true">
+        </one-to-one>
+
+
+    </class>
+</hibernate-mapping>

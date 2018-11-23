@@ -15,16 +15,16 @@
     <context:component-scan base-package="cap.*"/>
 
 
-    <bean id="admin" class="cap.bean.Admin">
+    <cap.bean.bean id="admin" class="cap.cap.bean.bean.Admin">
         <property name="id" value="1"/>
         <property name="username" value="starlee2008"/>
         <property name="password" value="starlee2008"/>
-    </bean>
+    </cap.bean.bean>
     <!--
 
-    <bean id="adminDAO" class="cap.AdminDAOImpl">
+    <cap.bean.bean id="adminDAO" class="cap.AdminDAOImpl">
         <property name="admin" ref="admin"/>
-    </bean>
+    </cap.bean.bean>
 
     -->
 

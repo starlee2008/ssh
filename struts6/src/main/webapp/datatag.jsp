@@ -13,11 +13,11 @@
 </head>
 <body>
 
-<s:bean name="cap.bean.User" id="u">
+<s:cap.bean.bean name="cap.cap.bean.bean.User" id="u">
     <s:param name="id" value="1"/>
     <s:param name="username" value="'cap'"/>
     <s:param name="password" value="'cap'"/>
-</s:bean>
+</s:cap.bean.bean>
 
 <s:push value="#u">
     <s:property value="id"/>

@@ -4,36 +4,37 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="adminInterceptor" class="cap.util.AdminInterceptor"></bean>
+    <cap.bean.bean id="adminInterceptor" class="cap.util.AdminInterceptor"></cap.bean.bean>
 
-    <bean id="adminDAO" class="cap.AdminDAOImpl">
-    </bean>
+    <cap.bean.bean id="adminDAO" class="cap.AdminDAOImpl">
+    </cap.bean.bean>
     <!--
 
-    <bean id="logProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <cap.bean.bean id="logProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
         <property name="proxyInterfaces">
             <value>cap.dao.AdminDAO</value>
         </property>
         <property name="target">
-           <ref bean="adminDAO"></ref>
+           <ref cap.bean.bean="adminDAO"></ref>
         </property>
         <property name="interceptorNames">
             <list>
                 <value>adminInterceptor</value>
             </list>
         </property>
-    </bean>
+    </cap.bean.bean>
     -->
-    <bean id="autoProxyCreator" class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator">
+    <cap.bean.bean id="autoProxyCreator"
+                   class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator">
 
-    </bean>
-    <bean id="adviser" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+    </cap.bean.bean>
+    <cap.bean.bean id="adviser" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
         <property name="pattern">
             <value>.*DAOImpl.say*.*</value>
         </property>
         <property name="advice">
-            <ref bean="adminInterceptor"></ref>
+            <ref cap.bean.bean="adminInterceptor"></ref>
         </property>
-    </bean>
+    </cap.bean.bean>
 
 </beans>
