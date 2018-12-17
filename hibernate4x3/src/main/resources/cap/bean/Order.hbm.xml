@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD
+3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-12-17 10:04:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cap.bean.Order" table="n_order">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="increment"/>
+        </id>
+        <property name="orderNumber" type="java.lang.String">
+            <column name="orderNumber"></column>
+        </property>
+        <property name="date" type="java.util.Date">
+            <column name="date"/>
+        </property>
+
+        <set name="products" table="n_orderitem" inverse="true" cascade="all">
+            <key>
+                <column name="ORDER_ID"/>
+            </key>
+            <many-to-many class="cap.bean.Product">
+                <column name="PRODUCT_ID"/>
+            </many-to-many>
+        </set>
+
+    </class>
+</hibernate-mapping>

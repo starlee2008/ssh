@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD
+3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-12-17 10:04:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cap.bean.Product" table="n_product">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="increment"/>
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="name"></column>
+        </property>
+        <property name="serialNumber" type="java.lang.String">
+            <column name="serialNumber"/>
+        </property>
+        <property name="price" type="java.lang.Double">
+            <column name="price"/>
+        </property>
+        <property name="stock" type="java.lang.Integer">
+            <column name="stock"/>
+        </property>
+
+        <set name="orders" table="n_orderitem">
+            <key>
+                <column name="PRODUCT_ID"/>
+            </key>
+            <many-to-many class="cap.bean.Order">
+                <column name="ORDER_ID"/>
+            </many-to-many>
+
+        </set>
+
+    </class>
+</hibernate-mapping>
