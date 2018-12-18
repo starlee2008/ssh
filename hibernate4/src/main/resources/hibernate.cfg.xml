@@ -27,12 +27,12 @@
 
         <property name="hibernate.c3p0.validate">true</property>
         <property name="show_sql">true</property>
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
         <property name="format_sql">true</property>
         <!--load mapping resources -->
 
-        <mapping resource="cap/cap.bean.bean/Customer.hbm.xml"/>
-        <mapping resource="cap/cap.bean.bean/Order.hbm.xml"/>
+        <mapping resource="cap/bean/Customer.hbm.xml"/>
+        <mapping resource="cap/bean/Order.hbm.xml"/>
 
     </session-factory>
 

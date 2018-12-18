@@ -9,6 +9,7 @@ public class Product {
     private String serialNumber;// 产品序列号
     private double price;// 产品价格
     private int stock;// 产品库存量
+    private Set<OrderItem> orderItems = new HashSet<OrderItem>();// 订单项
 
     public Product() {
     }
@@ -19,8 +20,6 @@ public class Product {
         this.price = price;
         this.stock = stock;
     }
-
-    private Set<OrderItem> orderItems = new HashSet<OrderItem>();// 订单项
 
 
     public Integer getId() {

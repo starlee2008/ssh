@@ -28,6 +28,9 @@
             <one-to-many class="cap.bean.OrderItem"/>
         </set>
 
-
     </class>
+    <sql-query name="products">
+        <return class="cap.bean.Product"/>
+        select * from m_product as p where p.name like :name
+    </sql-query>
 </hibernate-mapping>

@@ -4,7 +4,7 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 2013-12-17 10:04:09 by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="cap.Customer" table="customer">
+    <class name="cap.bean.Customer" table="customer">
         <id name="id" type="java.lang.Integer">
             <generator class="increment"/>
         </id>
@@ -20,7 +20,7 @@
 
         <set name="orders" table="orders" inverse="true" lazy="true">
             <key column="customer_id"/>
-            <one-to-many class="cap.cap.bean.bean.Order"></one-to-many>
+            <one-to-many class="cap.bean.Order"></one-to-many>
         </set>
 
     </class>
